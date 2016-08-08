@@ -1,0 +1,11 @@
+<h1>******** Welcome to the longest word-game !********</h1>
+<h2>Here is your grid :</h2>
+<%= @grid %>
+<h2>What's your best shot ?</h2>
+
+<form action="/score">  <!-- je renvoie a cette page par après.. -->
+  <label for="question">best shot ?</label>
+  <input type="text" id="question" name="input" placeholder="write text here">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
